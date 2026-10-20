@@ -1,0 +1,14 @@
+Design Choices - The Book Corner
+
+- Theme: An online bookstore. The colour palette is inspired by Goodreads,
+  with a serif font (Georgia) for a bookish feel.
+- Layout: The header has the logo and a navigation menu linking to each
+  section. The catalogue is a flex container whose cards wrap onto new
+  rows as space runs out.
+- Product cards: Inspired by Temu's product layout to give a shopping-site
+  feel. Each card has a cover, title, short description and "Shop Now" button.
+- Hover effect: Cards lift and get a shadow on hover to make the page feel
+  interactive.
+- Responsive design: Media queries show several cards per row on desktop,
+  2 on tablet and 1 on mobile. On mobile the logo sits above the menu.
+- Code: Organised by section, with comments and semantic HTML tags.

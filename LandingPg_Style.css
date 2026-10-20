@@ -1,0 +1,106 @@
+/* ===== Reset & base ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #e0d6c8;
+}
+
+.nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none; 
+}
+
+.nav-link:hover { color: #8a4b2a; }
+
+body {
+  font-family: Georgia, serif;   /* serif fits a bookstore */
+  color: #2b2118;
+  background: #faf7f2;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ===== Catalogue section ===== */
+.Pdt_Catalogue {
+  display: flex;
+  flex-wrap: wrap;   /* cards move to the next row when full */
+  justify-content: center;      
+  gap: 39px;
+  padding: 32px;
+}
+
+/* Title takes the full row */
+.Pdt_Catalogue h2 { flex: 0 0 100%;  text-align: center;}
+
+/* ===== Cards ===== */
+.card {
+  flex: 1 1 220px;          /* grow, shrink, minimum width 220px */
+  max-width: 280px;
+  background: #fff;
+  border: 1px solid #e0d6c8;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ }
+
+/* Hover effect: card lifts and gets a shadow */
+.card:hover {  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;        /* crops covers evenly */
+}
+
+.card h3, .card p, .card .btn { margin: 0.5rem 1rem; }
+.card p { font-size: 0.9rem; flex: 1; }   /* pushes button to the bottom */
+
+/* ===== Button ===== */
+.btn {
+  align-self: flex-center;
+  background: #8a4b2a;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.btn:hover { background: #6b3a20; } 
+
+/* ===== Footer ===== */
+footer {
+  background: #2b2118;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .card { max-width: none; }   /* cards stretch to fill the row (2 per row) */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;    /* logo above the menu */
+    gap: 0.75rem;
+  }
+  .nav-list { gap: 1rem; }
+  .card { flex: 1 1 100%; }    /* 1 card per row */
+  .card img { height: 350px; }
+}

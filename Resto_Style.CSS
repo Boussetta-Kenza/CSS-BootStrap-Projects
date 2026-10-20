@@ -1,0 +1,32 @@
+body { font-family: "Segoe UI", sans-serif; }
+h1, h2, h5, .navbar-brand { font-family: Georgia, serif; }
+
+
+.bg-brand { background-color: #8b2e1f; }
+.bg-cream { background-color: #fdf6e9; }
+
+.btn-brand {
+  background-color: #8b2e1f;
+  color: #fff;
+}
+.btn-brand:hover { background-color: #6e2318; color: #fff; }
+
+.hero {
+  min-height: 50vh;
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKOYIKtQTGEj0aT_bsHxpHbOjRNr_u_Kk2Brl_KlZaeA&s=10") center / cover no-repeat;
+}
+
+.card { border: 0; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+.card-img-top { height: 220px; object-fit: cover; }
+
+.price {
+  background-color: #8b2e1f;
+  color: #fdf6e9;
+  font-size: 1rem;
+}
+
+.Form {justify-content: center; align-items: center;}
+
+section { scroll-margin-top: 56px; }

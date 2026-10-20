@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Upgrading the Resto page from the HTML checkpoint -->
+ <html lang="en"> 
+
+<head>    
+
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="Resto_Style.CSS" rel="stylesheet">
+
+ <title>Slices of Life</title>
+ 
+ </head>
+
+ <body>   
+<!-- Adding a Navbar -->  
+<nav class="navbar navbar-expand-lg navbar-dark bg-brand fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Slices of Life</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div>
+      <h1 class="display-3">Slices of Life</h1>
+      <p class="lead">Thin-crust pizza and Italian favorites, made fresh.</p>
+      <a href="#menu" class="btn btn-warning btn-lg">View Menu</a>
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Menu</h2>
+
+      <h3 class="mb-3">Appetizers</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzICpSr7wGDcSdu72ADd0iLIm-Tu8G_qYJAj79bE3eng&s=10" class="card-img-top" alt="Caprese salad">
+            <div class="card-body">
+              <h5 class="card-title">Caprese Salad</h5>
+              <p class="card-text">Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
+              <span class="badge price">10 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://thewoodenskillet.com/wp-content/uploads/2016/06/bruschetta-recipe-15.jpg" class="card-img-top" alt="Bruschetta">
+            <div class="card-body">
+              <h5 class="card-title">Bruschetta</h5>
+              <p class="card-text">Toasted bread topped with diced tomatoes, garlic, and fresh basil.</p>
+              <span class="badge price">12 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhscFBwI3mNobIIeznx4Ajl39DuwdzQavavuF-wGo0A&s=10" class="card-img-top" alt="Stuffed mushrooms">
+            <div class="card-body">
+              <h5 class="card-title">Stuffed Mushrooms</h5>
+              <p class="card-text">Baked mushrooms filled with cheese and spinach.</p>
+              <span class="badge price">16 DT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Main Courses (cards) -->
+      <h3 class="mb-3">Main Courses</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ1ZkkM_yQ_1DDI0v_cDAx24MiY4EuqojU5cHT-H0-A&s=10" class="card-img-top" alt="Smoked salmon pizza">
+            <div class="card-body">
+              <h5 class="card-title">Smoked Salmon Pizza</h5>
+              <p class="card-text">Thin crust topped with smoked salmon, cream cheese and red onion.</p>
+              <span class="badge price">35 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoi5EDH8icj4AQA5g2sAR9YcBw-1bnasET00e8NgbZPQ&s=10" class="card-img-top" alt="Four cheese pizza">
+            <div class="card-body">
+              <h5 class="card-title">Four Cheese Pizza</h5>
+              <p class="card-text">Four types of cheese melted on a thin crust, topped with your choice of sauce.</p>
+              <span class="badge price">25 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmltKSQAv7o2VWDIAXHn0uJ71A0DMLGJ2uiG6yrh3Kg&s=10" class="card-img-top" alt="Margherita pizza">
+            <div class="card-body">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <p class="card-text">Classic pizza with fresh mozzarella, tomatoes, and basil.</p>
+              <span class="badge price">18 DT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    <!-- Desserts -->
+      <h3 class="mb-3">Desserts</h3>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8lD5FJiNPVROdHzXJgGziAUkpLFy8wys9D8Hdhb0rww&s=10" class="card-img-top" alt="Chocolate fondue">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Fondant</h5>
+              <p class="card-text">A warm dark chocolate cake with a delicate baked exterior and a rich, flowing molten center.</p>
+              <span class="badge price">12 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLD_7cIysjyI0CviPM5SdEt6CzAtDxsFiogdP6MP8QMQ&s=10" class="card-img-top" alt="Tiramisu">
+            <div class="card-body">
+              <h5 class="card-title">Tiramisu</h5>
+              <p class="card-text">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+              <span class="badge price">14 DT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweqdc7FxKsMuUagnB2sQ__bTGHY_zIESjIwa6JhvQbQ&s=10" class="card-img-top" alt="Panna cotta">
+            <div class="card-body">
+              <h5 class="card-title">Panna Cotta</h5>
+              <p class="card-text">Smooth and creamy Italian dessert with a rich vanilla flavor.</p>
+              <span class="badge price">10 DT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ABOUT -->
+  <section id="about" class="py-5 bg-cream">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR26dl_Kg3aS7Ne8CvPZhNH0_lsZAmPbN6Vay8Z0WxvwUOINcqALzCLX8&s=10" class="img-fluid rounded" alt="Inside Slices of Life restaurant">
+        </div>
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Slices of Life is a family-run restaurant serving classic Italian dishes made with fresh ingredients. From crisp thin-crust pizzas to creamy tiramisu, every plate is made to share.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us for Reservations</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-brand" id="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand text-white text-center py-4">
+    <div class="mb-2">
+      <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-twitter-x"></i></a>
+    </div>
+    <small>@2026 Slices of Life. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+ </html>

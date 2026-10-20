@@ -1,0 +1,35 @@
+body { font-family: "Segoe UI", sans-serif; }
+
+.bg-ocean { background-color: #0b4f6c; }
+
+.btn-teal {
+  background-color: #1bb7a6;
+  color: #fff;
+}
+.btn-teal:hover { background-color: #14907f; color: #fff; }
+
+.btn-outline-teal {
+  border: 2px solid #1bb7a6;
+  color: #1bb7a6;
+}
+.btn-outline-teal:hover { background-color: #1bb7a6; color: #fff; }
+
+.hero {
+  min-height: 75vh;
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtRIubK1mr6tFooyNcHbjhGkKv7y1Ze_5MapuCDTM5w&s=10") center / cover no-repeat;
+}
+
+.card { border: 0; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+.card-img-top { height: 220px; object-fit: cover; }
+
+.accordion-button:not(.collapsed) {
+  background-color: #e6f6f4;
+  color: #0b4f6c;
+}
+.btn-brand {
+  background-color: #1bb7a6;
+  color: #fff;}
+
+section { scroll-margin-top: 56px; }
